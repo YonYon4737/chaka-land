@@ -1,205 +1,220 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>チャカランド | Artist</title>
-    <meta name="description" content="チャカランド公式サイト。グッズ、MV、ニュース、プロフィール、仕事の問い合わせ。" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
 
-    <header class="hero" id="top">
-      <nav class="nav">
-        <a class="logo" href="#top">チャカランド</a>
-        <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="menu-label">MENU</span>
-          <span class="menu-bars" aria-hidden="true"></span>
-        </button>
-        <div class="nav-links" id="nav-links">
-          <a href="#goods">Goods</a>
-          <a href="#mv">MV</a>
-          <a href="#news">News</a>
-          <a href="#profile">Profile</a>
-          <a href="#contact">Contact</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>チャカランド | Artist</title>
+  <meta name="description" content="チャカランド公式サイト。グッズ、MV、ニュース、プロフィール、仕事の問い合わせ。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="logo" href="#top">チャカランド</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span class="menu-label">MENU</span>
+        <span class="menu-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#goods">Goods</a>
+        <a href="#mv">MV</a>
+        <a href="#news">News</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero-media">
+      <img src="assets/Main_Member.jpg" alt="チャカランド メインビジュアル" />
+    </div>
+    <div class="hero-card">
+      <p class="tag">令和歌謡曲</p>
+      <h1>チャカランド</h1>
+      <p class="lead">
+        沖縄を拠点に活動する世界をHAPPYにする令和歌謡曲グループ。
+        JPOPや昭和歌謡を現代的にアップデートした「令和歌謡曲」を得意とし、
+        耳に残るメロディセンス でじわじわとファンを拡大中。
+        過去には『Mongol tsuwn her we?』がモンゴルで大ヒットし
+        SNS総再生数1200万回突破KFCモンゴルのCMソングなども手がけ、国内外で活動の幅を広げている。
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#goods">グッズを見る</a>
+        <a class="btn ghost" href="#contact">仕事の問い合わせ</a>
+      </div>
+    </div>
+
+    <div class="hero-cards">
+      <div class="card">
+        <p class="card-title">NEW</p>
+        <p class="card-body">最新MV「 愛する私へ 」公開中</p>
+      </div>
+      <div class="card">
+        <p class="card-title">LIVE</p>
+        <p class="card-body">3/29 イオン那覇</p>
+      </div>
+      <div class="card">
+        <p class="card-title">GOODS</p>
+        <p class="card-body">Tシャツ、缶バッジ、ステッカー</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="goods" class="section">
+      <div class="section-head">
+        <h2>Goods</h2>
+        <p>グッズ購入はこちら。画像とリンクを差し替えて使えます。</p>
+      </div>
+      <div class="grid goods-grid">
+        <article class="tile">
+          <div class="thumb">IMAGE</div>
+          <h3>ネオンTシャツ</h3>
+          <p>ビビッドカラー、ライブ映え。</p>
+          <a class="link" href="#">購入ページへ →</a>
+        </article>
+        <article class="tile">
+          <div class="thumb">IMAGE</div>
+          <h3>ステッカーパック</h3>
+          <p>PCやスマホを彩る。</p>
+          <a class="link" href="#">購入ページへ →</a>
+        </article>
+        <article class="tile">
+          <div class="thumb">IMAGE</div>
+          <h3>アクリルキーホルダー</h3>
+          <p>揺れるパラダイス。</p>
+          <a class="link" href="#">購入ページへ →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="mv" class="section alt">
+      <div class="section-head">
+        <h2>MV</h2>
+        <p>最新MVやプレイリスト。</p>
+      </div>
+      <div class="mv-wrap">
+        <div class="mv-player">
+          <div class="mv-embed">
+            <a class="mv-link" href="https://www.youtube.com/watch?v=CNo6vOcVIes" target="_blank" rel="noopener">
+              <img src="https://img.youtube.com/vi/CNo6vOcVIes/hqdefault.jpg" alt="CHAOS PARADE MV サムネイル" />
+              <span class="mv-link-label">YouTubeで再生</span>
+            </a>
+          </div>
         </div>
-      </nav>
-
-      <div class="hero-content">
-        <p class="tag">NOISY POP / CHAKA PARADISE</p>
-        <h1>チャカランド</h1>
-        <p class="lead">
-          ビビッドで自由。音と色がぶつかる遊園地みたいなアーティストワールド。
-        </p>
-        <div class="hero-cta">
-          <a class="btn primary" href="#goods">グッズを見る</a>
-          <a class="btn ghost" href="#contact">仕事の問い合わせ</a>
+        <div class="mv-list">
+          <div class="mv-item">
+            <span class="mv-badge">NEW</span>
+            <div>
+              <p class="mv-title"> 愛する私へ</p>
+              <p class="mv-meta">2025 / MV</p>
+            </div>
+          </div>
+          <div class="mv-item">
+            <span class="mv-badge">MV</span>
+            <div>
+              <p class="mv-title">100万回のありがとう~世界で一番大きな愛~</p>
+              <p class="mv-meta">2024 / MV</p>
+            </div>
+          </div>
+          <div class="mv-item">
+            <span class="mv-badge">MV</span>
+            <div>
+              <p class="mv-title">スウィム・スウィム・スウィム</p>
+              <p class="mv-meta">2024 / MV</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero-cards">
-        <div class="card">
-          <p class="card-title">NEW</p>
-          <p class="card-body">最新MV「CHAOS PARADE」公開中</p>
-        </div>
-        <div class="card">
-          <p class="card-title">LIVE</p>
-          <p class="card-body">7/20 渋谷・夜のパラダイス</p>
-        </div>
-        <div class="card">
-          <p class="card-title">GOODS</p>
-          <p class="card-body">ネオンT・缶バッジ先行販売</p>
+    <section id="news" class="section">
+      <div class="section-head">
+        <h2>News</h2>
+        <p>最新情報。投稿はここに追加。</p>
+      </div>
+      <div class="news-list">
+        <article class="news-item">
+          <p class="news-date">2025.06.12</p>
+          <p class="news-title">新MV「CHAOS PARADE」公開</p>
+          <p class="news-body">色と音が爆発する最新作を公開しました。</p>
+        </article>
+        <article class="news-item">
+          <p class="news-date">2025.05.30</p>
+          <p class="news-title">夏のグッズ先行販売スタート</p>
+          <p class="news-body">ネオンT、缶バッジ、ステッカー。</p>
+        </article>
+        <article class="news-item">
+          <p class="news-date">2025.05.01</p>
+          <p class="news-title">ワンマンライブ開催決定</p>
+          <p class="news-body">7/20 渋谷・夜のパラダイス。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="profile" class="section alt">
+      <div class="section-head">
+        <h2>Profile</h2>
+        <p>プロフィールや受賞歴、活動拠点など。</p>
+      </div>
+      <div class="profile">
+        <div class="profile-photo">PHOTO</div>
+        <div class="profile-body">
+          <p class="profile-name">チャカランド / ChakaLand</p>
+          <p class="profile-text">
+            東京発。ポップ、ノイズ、カラフルが交差する音像。
+            「遊園地の夜」をテーマに制作とライブを展開。
+          </p>
+          <div class="profile-tags">
+            <span>#POP</span>
+            <span>#NOISE</span>
+            <span>#NEON</span>
+            <span>#LIVE</span>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section id="goods" class="section">
-        <div class="section-head">
-          <h2>Goods</h2>
-          <p>グッズ購入はこちら。画像とリンクを差し替えて使えます。</p>
-        </div>
-        <div class="grid goods-grid">
-          <article class="tile">
-            <div class="thumb">IMAGE</div>
-            <h3>ネオンTシャツ</h3>
-            <p>ビビッドカラー、ライブ映え。</p>
-            <a class="link" href="#">購入ページへ →</a>
-          </article>
-          <article class="tile">
-            <div class="thumb">IMAGE</div>
-            <h3>ステッカーパック</h3>
-            <p>PCやスマホを彩る。</p>
-            <a class="link" href="#">購入ページへ →</a>
-          </article>
-          <article class="tile">
-            <div class="thumb">IMAGE</div>
-            <h3>アクリルキーホルダー</h3>
-            <p>揺れるパラダイス。</p>
-            <a class="link" href="#">購入ページへ →</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="mv" class="section alt">
-        <div class="section-head">
-          <h2>MV</h2>
-          <p>最新MVやプレイリスト。YouTube埋め込みに差し替え可能。</p>
-        </div>
-        <div class="mv-wrap">
-          <div class="mv-player">
-            <div class="mv-placeholder">VIDEO</div>
-          </div>
-          <div class="mv-list">
-            <div class="mv-item">
-              <span class="mv-badge">NEW</span>
-              <div>
-                <p class="mv-title">CHAOS PARADE</p>
-                <p class="mv-meta">2025 / MV</p>
-              </div>
-            </div>
-            <div class="mv-item">
-              <span class="mv-badge">MV</span>
-              <div>
-                <p class="mv-title">NEON RIDE</p>
-                <p class="mv-meta">2024 / MV</p>
-              </div>
-            </div>
-            <div class="mv-item">
-              <span class="mv-badge">MV</span>
-              <div>
-                <p class="mv-title">SUGAR WAVE</p>
-                <p class="mv-meta">2024 / MV</p>
-              </div>
-            </div>
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>お仕事の問い合わせ・出演依頼はこちら。</p>
+      </div>
+      <div class="contact-card">
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value">chaka@example.com</p>
+          <p class="contact-label">SNS</p>
+          <div class="contact-links">
+            <a href="#">Instagram</a>
+            <a href="#">X (Twitter)</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
           </div>
         </div>
-      </section>
+        <div class="contact-note">
+          <p>以下を添えてご連絡ください。</p>
+          <ul>
+            <li>案件内容 / 日程 / 予算目安</li>
+            <li>公開時期 / 露出予定</li>
+            <li>担当者名 / 連絡先</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
 
-      <section id="news" class="section">
-        <div class="section-head">
-          <h2>News</h2>
-          <p>最新情報。投稿はここに追加。</p>
-        </div>
-        <div class="news-list">
-          <article class="news-item">
-            <p class="news-date">2025.06.12</p>
-            <p class="news-title">新MV「CHAOS PARADE」公開</p>
-            <p class="news-body">色と音が爆発する最新作を公開しました。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date">2025.05.30</p>
-            <p class="news-title">夏のグッズ先行販売スタート</p>
-            <p class="news-body">ネオンT、缶バッジ、ステッカー。</p>
-          </article>
-          <article class="news-item">
-            <p class="news-date">2025.05.01</p>
-            <p class="news-title">ワンマンライブ開催決定</p>
-            <p class="news-body">7/20 渋谷・夜のパラダイス。</p>
-          </article>
-        </div>
-      </section>
+  <footer class="footer">
+    <p>© CHAKA LAND</p>
+    <a href="#top">TOP ↑</a>
+  </footer>
 
-      <section id="profile" class="section alt">
-        <div class="section-head">
-          <h2>Profile</h2>
-          <p>プロフィールや受賞歴、活動拠点など。</p>
-        </div>
-        <div class="profile">
-          <div class="profile-photo">PHOTO</div>
-          <div class="profile-body">
-            <p class="profile-name">チャカランド / ChakaLand</p>
-            <p class="profile-text">
-              東京発。ポップ、ノイズ、カラフルが交差する音像。
-              「遊園地の夜」をテーマに制作とライブを展開。
-            </p>
-            <div class="profile-tags">
-              <span>#POP</span>
-              <span>#NOISE</span>
-              <span>#NEON</span>
-              <span>#LIVE</span>
-            </div>
-          </div>
-        </div>
-      </section>
+  <script src="script.js"></script>
+</body>
 
-      <section id="contact" class="section">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p>お仕事の問い合わせ・出演依頼はこちら。</p>
-        </div>
-        <div class="contact-card">
-          <div>
-            <p class="contact-label">Email</p>
-            <p class="contact-value">chaka@example.com</p>
-            <p class="contact-label">SNS</p>
-            <div class="contact-links">
-              <a href="#">Instagram</a>
-              <a href="#">X (Twitter)</a>
-              <a href="#">YouTube</a>
-              <a href="#">TikTok</a>
-            </div>
-          </div>
-          <div class="contact-note">
-            <p>以下を添えてご連絡ください。</p>
-            <ul>
-              <li>案件内容 / 日程 / 予算目安</li>
-              <li>公開時期 / 露出予定</li>
-              <li>担当者名 / 連絡先</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© CHAKA LAND</p>
-      <a href="#top">TOP ↑</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
 </html>

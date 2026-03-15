@@ -150,6 +150,10 @@ a {
   width: auto;
 }
 
+.logo-center {
+  margin: 0 auto;
+}
+
 .nav-links {
   display: flex;
   gap: 18px;
@@ -625,6 +629,10 @@ a {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .logo-center {
+    align-self: center;
   }
 
   .menu-button {

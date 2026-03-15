@@ -151,7 +151,14 @@ a {
 }
 
 .logo-center {
-  margin: 0 auto;
+  margin: 0;
+}
+
+@media (min-width: 701px) {
+  .logo-center {
+    margin-left: 12px;
+    margin-right: auto;
+  }
 }
 
 .nav-links {
@@ -633,6 +640,7 @@ a {
 
   .logo-center {
     align-self: center;
+    margin: 0 auto;
   }
 
   .menu-button {

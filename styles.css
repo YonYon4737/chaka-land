@@ -81,12 +81,6 @@ a {
   gap: 24px;
   flex-wrap: wrap;
   margin-bottom: 32px;
-  width: 100%;
-  background: var(--paper);
-  border: 2px solid var(--ink);
-  border-radius: 18px;
-  padding: 10px 16px;
-  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 .menu-button {

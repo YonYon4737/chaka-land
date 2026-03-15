@@ -682,6 +682,11 @@ a {
     justify-self: end;
   }
 
+  .nav-icon-youtube,
+  .nav-icon-x {
+    display: none;
+  }
+
   .nav-links {
     width: 100%;
     grid-column: 1 / -1;

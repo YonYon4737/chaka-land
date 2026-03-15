@@ -625,6 +625,7 @@ a {
 }
 
 @media (max-width: 900px) {
+
   .mv-wrap,
   .profile,
   .contact-card {
@@ -632,7 +633,7 @@ a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .nav {
     flex-direction: row;
     align-items: center;
@@ -641,7 +642,9 @@ a {
 
   .logo-center {
     align-self: center;
-    margin: 0 auto;
+    margin-left: 12px;
+    /* ここを増減して左寄せ量を調整 */
+    margin-right: auto;
   }
 
   .menu-button {

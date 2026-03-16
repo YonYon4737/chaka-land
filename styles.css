@@ -223,7 +223,7 @@ img {
   padding: 64px 6vw;
 }
 
-.section + .section {
+.section+.section {
   border-top: 2px dashed var(--frame-brown);
 }
 
@@ -293,6 +293,14 @@ img {
   object-fit: cover;
 }
 
+.goods-img-tshirt {
+  object-position: center 15%;
+}
+
+.goods-img-keyholder {
+  object-position: center 80%;
+}
+
 .goods-card div {
   padding: 16px;
 }
@@ -358,6 +366,7 @@ img {
   height: 100%;
   object-fit: contain;
 }
+
 .profile-text h3 {
   margin: 0 0 10px;
 }
@@ -564,6 +573,7 @@ img {
     width: 100%;
   }
 }
+
 #contact {
   text-align: center;
 }

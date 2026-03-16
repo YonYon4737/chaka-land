@@ -58,8 +58,7 @@ img {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 14px;
+  padding: 10px 0 14px;
 }
 
 .logo img {

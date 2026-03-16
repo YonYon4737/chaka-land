@@ -49,7 +49,7 @@ img {
 }
 
 .hero {
-  padding: 28px 6vw 42px;
+  padding: 8px 3vw 42px;
 }
 
 .nav {
@@ -531,7 +531,7 @@ img {
 }
 
 .footer {
-  padding: 32px 6vw 40px;
+  padding: 32px 3vw 40px;
   border-top: 1px solid var(--line);
   display: flex;
   flex-direction: column;

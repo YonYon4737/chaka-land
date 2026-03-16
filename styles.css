@@ -301,6 +301,19 @@ img {
   object-position: center 80%;
 }
 
+@media (max-width: 600px) {
+  .goods-card img {
+    height: 200px;
+  }
+
+  .goods-img-tshirt,
+  .goods-img-keyholder {
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+  }
+}
+
 .goods-card div {
   padding: 16px;
 }

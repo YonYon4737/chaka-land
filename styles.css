@@ -8,6 +8,9 @@
   --accent-3: #8bd3ff;
   --paper: #ffffff;
   --line: rgba(0, 0, 0, 0.08);
+  --frame-blue: #53b7ff;
+  --frame-yellow: #ffcc4d;
+  --frame-pink: #ff6f91;
 }
 
 * {
@@ -203,7 +206,7 @@ img {
 .hero-media {
   border-radius: 22px;
   overflow: hidden;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-blue);
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.15);
   background: var(--paper);
   aspect-ratio: 4 / 3;
@@ -223,7 +226,7 @@ img {
 }
 
 .section + .section {
-  border-top: 2px dashed var(--ink);
+  border-top: 2px dashed var(--frame-blue);
 }
 
 .section.alt {
@@ -235,6 +238,12 @@ img {
   font-size: clamp(28px, 5vw, 48px);
   margin: 0 0 6px;
   letter-spacing: 2px;
+  display: inline-block;
+  padding: 2px 10px;
+  background: linear-gradient(transparent 58%, rgba(139, 211, 255, 0.65) 58%);
+  text-shadow: 0 2px 0 rgba(255, 204, 77, 0.45);
+  box-shadow: 0 6px 0 rgba(255, 111, 145, 0.25);
+  border-radius: 6px;
 }
 
 .section-head p {
@@ -248,7 +257,7 @@ img {
 
 .news-item {
   background: var(--paper);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-pink);
   border-radius: 16px;
   padding: 16px 18px;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
@@ -274,7 +283,7 @@ img {
 
 .goods-card {
   background: var(--paper);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-yellow);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
@@ -338,7 +347,7 @@ img {
 .profile-media {
   border-radius: 18px;
   overflow: hidden;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-blue);
   background: var(--paper);
   aspect-ratio: 4 / 3;
   display: flex;
@@ -365,7 +374,7 @@ img {
 .mv-thumb {
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-blue);
   background: #000;
   position: relative;
   display: block;
@@ -414,7 +423,7 @@ img {
   gap: 16px;
   padding: 14px 16px;
   border-radius: 14px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-pink);
   background: var(--paper);
 }
 
@@ -438,7 +447,7 @@ img {
 }
 
 .contact-card {
-  border: 2px solid var(--ink);
+  border: 2px solid var(--frame-yellow);
   border-radius: 18px;
   background: var(--paper);
   padding: 20px;

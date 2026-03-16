@@ -117,6 +117,29 @@ img {
   margin-top: 30px;
 }
 
+.hero-grid-home {
+  grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
+  grid-template-areas:
+    "text media"
+    "lead media";
+}
+
+.hero-grid-home .hero-text {
+  grid-area: text;
+}
+
+.hero-grid-home .hero-media {
+  grid-area: media;
+}
+
+.hero-grid-home .hero-lead {
+  grid-area: lead;
+}
+
+.hero-grid-home .hero-lead .lead {
+  margin: 0;
+}
+
 .hero-text h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(44px, 8vw, 96px);
@@ -199,10 +222,12 @@ img {
   padding: 64px 6vw;
 }
 
+.section + .section {
+  border-top: 2px dashed var(--ink);
+}
+
 .section.alt {
   background: rgba(255, 255, 255, 0.65);
-  border-top: 2px dashed var(--ink);
-  border-bottom: 2px dashed var(--ink);
 }
 
 .section-head h2 {
@@ -499,6 +524,14 @@ img {
 
   .hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero-grid-home {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text"
+      "media"
+      "lead";
   }
 
   .contact-card {

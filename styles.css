@@ -182,6 +182,17 @@ img {
   overflow: hidden;
   border: 2px solid var(--ink);
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.15);
+  background: var(--paper);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .section {
@@ -303,8 +314,18 @@ img {
   border-radius: 18px;
   overflow: hidden;
   border: 2px solid var(--ink);
+  background: var(--paper);
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.profile-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .profile-text h3 {
   margin: 0 0 10px;
 }
@@ -397,6 +418,7 @@ img {
   background: var(--paper);
   padding: 20px;
   max-width: 520px;
+  margin: 0 auto;
 }
 
 .contact-label {
@@ -414,6 +436,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.contact-card a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  display: inline-block;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.contact-card a:hover {
+  transform: translateY(-2px);
+  background: rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
 }
 
 .link {
@@ -468,4 +504,21 @@ img {
   .contact-card {
     width: 100%;
   }
+}
+#contact {
+  text-align: center;
+}
+
+#contact .section-head {
+  align-items: center;
+}
+
+#contact .contact-card {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#contact .contact-links {
+  justify-content: center;
 }

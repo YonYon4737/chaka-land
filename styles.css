@@ -8,9 +8,7 @@
   --accent-3: #8bd3ff;
   --paper: #ffffff;
   --line: rgba(0, 0, 0, 0.08);
-  --frame-blue: #53b7ff;
-  --frame-yellow: #ffcc4d;
-  --frame-pink: #ff6f91;
+  --frame-brown: #6b4f3b;
 }
 
 * {
@@ -206,7 +204,7 @@ img {
 .hero-media {
   border-radius: 22px;
   overflow: hidden;
-  border: 2px solid var(--frame-blue);
+  border: 2px solid var(--frame-brown);
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.15);
   background: var(--paper);
   aspect-ratio: 4 / 3;
@@ -226,7 +224,7 @@ img {
 }
 
 .section + .section {
-  border-top: 2px dashed var(--frame-blue);
+  border-top: 2px dashed var(--frame-brown);
 }
 
 .section.alt {
@@ -257,7 +255,7 @@ img {
 
 .news-item {
   background: var(--paper);
-  border: 2px solid var(--frame-pink);
+  border: 2px solid var(--frame-brown);
   border-radius: 16px;
   padding: 16px 18px;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
@@ -283,7 +281,7 @@ img {
 
 .goods-card {
   background: var(--paper);
-  border: 2px solid var(--frame-yellow);
+  border: 2px solid var(--frame-brown);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
@@ -347,7 +345,7 @@ img {
 .profile-media {
   border-radius: 18px;
   overflow: hidden;
-  border: 2px solid var(--frame-blue);
+  border: 2px solid var(--frame-brown);
   background: var(--paper);
   aspect-ratio: 4 / 3;
   display: flex;
@@ -374,7 +372,7 @@ img {
 .mv-thumb {
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--frame-blue);
+  border: 2px solid var(--frame-brown);
   background: #000;
   position: relative;
   display: block;
@@ -423,7 +421,7 @@ img {
   gap: 16px;
   padding: 14px 16px;
   border-radius: 14px;
-  border: 2px solid var(--frame-pink);
+  border: 2px solid var(--frame-brown);
   background: var(--paper);
 }
 
@@ -447,7 +445,7 @@ img {
 }
 
 .contact-card {
-  border: 2px solid var(--frame-yellow);
+  border: 2px solid var(--frame-brown);
   border-radius: 18px;
   background: var(--paper);
   padding: 20px;

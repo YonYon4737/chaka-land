@@ -383,6 +383,120 @@ img {
   margin: 0 0 10px;
 }
 
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.tag {
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  background: var(--paper);
+}
+
+.member-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.member-card {
+  background: var(--paper);
+  border: 2px solid var(--frame-brown);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.member-card h3 {
+  margin: 0 0 6px;
+}
+
+.member-name {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
+.member-name.pay {
+  background: linear-gradient(transparent 62%, rgba(255, 225, 88, 0.6) 62%);
+}
+
+.member-name.teruyu {
+  background: linear-gradient(transparent 62%, rgba(255, 155, 74, 0.6) 62%);
+}
+
+.member-name.chakatomo {
+  background: linear-gradient(transparent 62%, rgba(255, 107, 107, 0.6) 62%);
+}
+
+.member-name.ren {
+  background: linear-gradient(transparent 62%, rgba(120, 216, 106, 0.6) 62%);
+}
+
+.member-name.hao {
+  background: linear-gradient(transparent 62%, rgba(107, 183, 255, 0.6) 62%);
+}
+
+.member-role {
+  margin: 0 0 10px;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.member-profile {
+  margin: 12px 0 0;
+  display: grid;
+  gap: 8px;
+}
+
+.member-profile div {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.member-profile dt {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.member-profile dd {
+  margin: 0;
+}
+
+.member-sns {
+  margin-top: 12px;
+}
+
+.member-sns a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 2px solid var(--frame-brown);
+  background: var(--paper);
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.member-sns a:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
+  background: rgba(255, 216, 107, 0.6);
+}
+
+
 .mv-grid {
   display: grid;
   gap: 24px;

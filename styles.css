@@ -129,6 +129,14 @@ img {
   margin-top: 30px;
 }
 
+.hero-compact {
+  padding-bottom: 24px;
+}
+
+.hero-compact .hero-grid {
+  margin-top: 16px;
+}
+
 .hero-grid-home {
   grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
   grid-template-areas:
@@ -232,6 +240,10 @@ img {
 
 .section {
   padding: 64px 6vw;
+}
+
+.section.tight-top {
+  padding-top: 0;
 }
 
 .section+.section {
@@ -707,6 +719,8 @@ img {
   gap: 16px;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
+  justify-content: center;
+  width: 100%;
 }
 
 @media (max-width: 840px) {

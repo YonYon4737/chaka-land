@@ -59,6 +59,12 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 0 14px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(249, 246, 242, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo img {

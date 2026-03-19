@@ -49,7 +49,7 @@ img {
 }
 
 .hero {
-  padding: 8px 3vw 42px;
+  padding: 96px 3vw 42px;
 }
 
 .nav {
@@ -58,13 +58,16 @@ img {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 10px 0 14px;
-  position: sticky;
+  padding: 12px 3vw;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
-  background: rgba(249, 246, 242, 0.9);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .logo img {
@@ -91,19 +94,22 @@ img {
   flex-wrap: wrap;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
+  margin-left: auto;
 }
 
 .nav-links a {
   padding: 6px 10px;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-links a:hover {
   transform: translateY(-2px);
-  background: rgba(0, 0, 0, 0.12);
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
 }
 
 .nav-cta {

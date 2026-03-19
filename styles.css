@@ -673,6 +673,14 @@ img {
 }
 
 @media (max-width: 840px) {
+  .hero {
+    padding-top: 72px;
+  }
+
+  .nav {
+    padding: 8px 4vw;
+  }
+
   .menu-button {
     display: inline-flex;
   }

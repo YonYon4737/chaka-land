@@ -674,11 +674,20 @@ img {
 
 @media (max-width: 840px) {
   .hero {
-    padding-top: 56px;
+    padding-top: 72px;
   }
 
   .nav {
-    padding: 8px 4vw;
+    padding: 6px 4vw;
+  }
+
+  .logo img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hero-grid {
+    margin-top: 16px;
   }
 
   .menu-button {
@@ -687,6 +696,7 @@ img {
 
   .nav-links {
     width: 100%;
+    margin-left: 0;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;

@@ -661,7 +661,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-links {

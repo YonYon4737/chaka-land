@@ -785,6 +785,12 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: clamp(32px, 9vw, 52px);
+  }
+}
+
 #contact {
   text-align: center;
 }

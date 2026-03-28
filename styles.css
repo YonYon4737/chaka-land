@@ -722,6 +722,11 @@ img {
   object-fit: contain;
 }
 
+.icon-link svg {
+  width: 26px;
+  height: 26px;
+}
+
 .icon-link.instagram,
 .icon-link.x,
 .icon-link.youtube {

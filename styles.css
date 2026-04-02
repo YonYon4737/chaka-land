@@ -28,6 +28,7 @@ body {
   min-height: 100vh;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -164,6 +165,16 @@ img {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(44px, 8vw, 96px);
   margin: 12px 0;
+}
+
+.hero-profile-detail .hero-text h1 {
+  font-size: clamp(32px, 6vw, 64px);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: linear-gradient(transparent 58%, rgba(139, 211, 255, 0.65) 58%);
+  text-shadow: 0 2px 0 rgba(255, 204, 77, 0.45);
+  box-shadow: 0 6px 0 rgba(255, 111, 145, 0.25);
 }
 
 .eyebrow {
@@ -386,6 +397,11 @@ img {
   align-items: center;
 }
 
+.profile-grid.profile-grid-detail {
+  grid-template-columns: minmax(280px, 1.2fr) minmax(240px, 1fr);
+  align-items: start;
+}
+
 .profile-media {
   border-radius: 18px;
   overflow: hidden;
@@ -403,8 +419,64 @@ img {
   object-fit: contain;
 }
 
+.profile-media.roomy {
+  padding: 12px;
+}
+
+.profile-media.roomy img {
+  object-fit: contain;
+}
+
+.profile-grid.profile-grid-detail .profile-media {
+  aspect-ratio: auto;
+  width: min(100%, 360px);
+  height: auto;
+  justify-self: end;
+}
+
+.profile-grid.profile-grid-detail .profile-media img {
+  width: 100%;
+  height: auto;
+}
+
 .profile-text h3 {
   margin: 0 0 10px;
+}
+
+.profile-lead {
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.profile-kv {
+  margin: 0 0 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.profile-kv div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.profile-kv dt {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.profile-kv dd {
+  margin: 0;
+}
+
+.profile-note {
+  margin: 0;
+  line-height: 1.7;
 }
 
 .tag-list {
@@ -427,6 +499,17 @@ img {
   display: grid;
   gap: 18px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.member-photo-link {
+  display: block;
+  color: inherit;
+}
+
+.member-photo-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: 12px;
 }
 
 .member-card {
@@ -554,6 +637,79 @@ img {
   transform: translateY(-2px);
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.12);
   background: rgba(255, 216, 107, 0.6);
+}
+
+.profile-detail {
+  background: var(--paper);
+  border: 2px solid var(--frame-brown);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
+  display: grid;
+  gap: 12px;
+}
+
+.detail-meta {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.detail-meta span {
+  display: inline-block;
+  min-width: 72px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.detail-lead {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.detail-sections {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.detail-section {
+  background: var(--paper);
+  border: 2px solid var(--frame-brown);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.detail-section h3 {
+  margin: 0 0 8px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+}
+
+.detail-section p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.detail-list li::before {
+  content: "★";
+  margin-right: 8px;
+  color: var(--accent);
+}
+
+.detail-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
 }
 
 .mv-grid {
@@ -818,6 +974,10 @@ img {
       "text"
       "media"
       "lead";
+  }
+
+  .profile-grid.profile-grid-detail {
+    grid-template-columns: 1fr;
   }
 
   .contact-card {

@@ -59,7 +59,7 @@ img {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 12px 3vw;
+  padding: 8px 3vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -72,11 +72,11 @@ img {
 }
 
 .logo img {
-  width: 54px;
-  height: 54px;
-  border-radius: 50%;
-  border: 2px solid var(--ink);
-  background: var(--paper);
+  width: clamp(128px, 16vw, 210px);
+  height: auto;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
 }
 
 .menu-button {
@@ -99,6 +99,8 @@ img {
 }
 
 .nav-links a {
+  position: relative;
+  overflow: hidden;
   padding: 6px 10px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.6);
@@ -107,10 +109,28 @@ img {
   transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 3px;
+  height: 2px;
+  background: rgba(27, 26, 23, 0.35);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s ease;
+}
+
 .nav-links a:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+}
+
+.nav-links a:hover::after,
+.nav-links a:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .nav-cta {
@@ -929,8 +949,8 @@ img {
   }
 
   .logo img {
-    width: 44px;
-    height: 44px;
+    width: clamp(110px, 30vw, 160px);
+    height: auto;
   }
 
   .hero-grid {

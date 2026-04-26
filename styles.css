@@ -273,6 +273,22 @@ img {
   padding: 64px 6vw;
 }
 
+.page-top-divider {
+  position: relative;
+}
+
+.page-top-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .section.tight-top {
   padding-top: 0;
 }
@@ -513,6 +529,42 @@ img {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 1px;
   background: var(--paper);
+}
+
+.biography-list {
+  display: grid;
+  gap: 14px;
+}
+
+.biography-item {
+  background: var(--paper);
+  border: 2px solid var(--frame-brown);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.biography-item h3 {
+  margin: 0 0 8px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1px;
+  font-size: 26px;
+}
+
+.biography-item p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.biography-note {
+  margin-top: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.biography-note p {
+  margin: 0;
+  line-height: 1.8;
 }
 
 .member-grid {
@@ -922,6 +974,7 @@ img {
 .footer {
   padding: 32px 3vw 40px;
   border-top: 1px solid var(--line);
+  background: #fff;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -937,6 +990,11 @@ img {
   letter-spacing: 1px;
   justify-content: center;
   width: 100%;
+}
+
+.footer-logo {
+  width: clamp(60px, 9vw, 110px);
+  height: auto;
 }
 
 @media (max-width: 840px) {

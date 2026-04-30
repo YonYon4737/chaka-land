@@ -318,6 +318,33 @@ img {
   margin: 0 0 24px;
 }
 
+.schedule-head {
+  text-align: center;
+}
+
+.schedule-calendar-wrap {
+  margin: 0 auto;
+  width: min(100%, 1040px);
+  border: 2px solid var(--frame-brown);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.14);
+}
+
+.schedule-calendar-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 600px;
+  border: 0;
+}
+
+.schedule-sns-note {
+  margin: 18px 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+
 .news-list {
   display: grid;
   gap: 16px;
@@ -1066,11 +1093,19 @@ img {
   .contact-card {
     width: 100%;
   }
+
+  .schedule-calendar-wrap iframe {
+    min-height: 70vh;
+  }
 }
 
 @media (max-width: 600px) {
   .hero-text h1 {
     font-size: clamp(32px, 9vw, 52px);
+  }
+
+  .schedule-calendar-wrap iframe {
+    min-height: 62vh;
   }
 }
 

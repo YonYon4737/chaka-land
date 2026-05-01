@@ -1223,20 +1223,20 @@ img {
   .hero-home-visual .hero-media {
     height: auto;
     min-height: 0;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 4.6;
     border-radius: 0;
   }
 
   .hero-home-visual .hero-media .hero-slide-img {
     object-fit: cover;
     object-position: center top;
-    transform: translateY(-36px);
+    transform: translateY(-18px);
   }
 
   .hero-home-visual .hero-media .hero-slide-img[src*="Senzai_"] {
     object-fit: cover;
     object-position: center top;
-    transform: translateY(-36px);
+    transform: translateY(-18px);
   }
 
   .hero-home-visual .hero-grid {

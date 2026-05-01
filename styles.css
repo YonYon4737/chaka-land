@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
 
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* End reset */
+
 :root {
   --bg: #f9f6f2;
   --ink: #1b1a17;
@@ -9,10 +63,6 @@
   --paper: #ffffff;
   --line: rgba(0, 0, 0, 0.08);
   --frame-brown: #6b4f3b;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html {
@@ -179,6 +229,60 @@ img {
 
 .hero-grid-home .hero-lead .lead {
   margin: 0;
+}
+
+.hero-home-visual {
+  padding: 72px 0 0;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-home-visual .hero-grid-home {
+  margin-top: 0;
+  display: block;
+  flex: 1;
+}
+
+.hero-home-visual .hero-media {
+  height: calc(100vh - 72px);
+  height: calc(100svh - 72px);
+  height: calc(100dvh - 72px);
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  aspect-ratio: auto;
+}
+
+.hero-slider {
+  position: relative;
+}
+
+.hero-slide-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 32%;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.hero-slide-img.is-active {
+  opacity: 1;
+}
+
+.hero-home-visual .hero-media img {
+  object-fit: cover;
+  object-position: center 32%;
+}
+
+.hero-slide-img[src$="Shugo_Diamond_pink.png"] {
+  object-position: center 18%;
+  transform: scale(0.94);
+  transform-origin: center center;
 }
 
 .hero-text h1 {
@@ -1096,6 +1200,48 @@ img {
 
   .schedule-calendar-wrap iframe {
     min-height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 68px;
+    padding-bottom: 0;
+  }
+
+  .hero-home-visual {
+    padding-top: 64px;
+    min-height: auto;
+    display: block;
+  }
+
+  .hero-home-visual .hero-grid-home {
+    margin-top: 0;
+    flex: 0 0 auto;
+  }
+
+  .hero-home-visual .hero-media {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
+    border-radius: 0;
+  }
+
+  .hero-home-visual .hero-media .hero-slide-img {
+    object-fit: cover;
+    object-position: center top;
+    transform: translateY(-36px);
+  }
+
+  .hero-home-visual .hero-media .hero-slide-img[src*="Senzai_"] {
+    object-fit: cover;
+    object-position: center top;
+    transform: translateY(-36px);
+  }
+
+  .hero-home-visual .hero-grid {
+    margin-top: 0;
+    gap: 0;
   }
 }
 

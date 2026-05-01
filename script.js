@@ -23,7 +23,7 @@ if (heroSlider) {
     .map((item) => item.trim())
     .filter(Boolean);
   const isMobileHero = window.matchMedia("(max-width: 768px)").matches;
-  const mobileHeroImage = "assets/Top/Senzai_Diamond_beige.png";
+  const mobileHeroImage = "assets/images/hero/Senzai_Diamond_beige.png";
   const slideImages = isMobileHero ? [mobileHeroImage] : desktopSlideImages;
   const slideLayers = heroSlider.querySelectorAll(".hero-slide-img");
 

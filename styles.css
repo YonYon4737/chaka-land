@@ -464,6 +464,15 @@ img {
   font-weight: 600;
 }
 
+.news-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-title a:hover {
+  color: var(--accent-red);
+}
+
 .goods-grid {
   display: grid;
   gap: 18px;
